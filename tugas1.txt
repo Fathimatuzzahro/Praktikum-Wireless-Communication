@@ -1,0 +1,27 @@
+IP ADDRESS : 203.6.149.150/23
+128 64 32 16 8 4 2 1 (2^n, n = 0-7)
+11001011.00000110.10010101.10010110
+NOTE : 
+implikasi subnet mask yaitu pada jumlah host di dalam IP tersebut
+
+Subnet Mask 		: 11111111.11111111.11111110.00000000 (255.255.254.0)
+	prefix lenght = 23
+	bit 1-23 bernilai 1, bit 24-32 bernilai 0
+	11111111.11111111.11111110.00000000
+	255.255.254.0
+	
+Network Address 	: 203.6.148.0
+	Network Address dapat dicari dengan meng-and-kan IP Address dan Subnet Mask
+	11001011.00000110.10010101.10010110
+	11111111.11111111.11111110.00000000
+	----------------------------------- and
+	11001011.00000110.10010100.00000000
+	203.6.148.0
+	
+Total Host	 		:
+	2^8-2 => n = jumlah bit 0 di dalam subnet
+	2^8-2 = 256-2 = 254 host
+
+IP Address 			: 203.6.148.1 - 203.6.148.254
+
+Broadcast Address 	: 203.6.148.255
